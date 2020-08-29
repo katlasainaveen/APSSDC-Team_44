@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/recycler2_image"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mainbackgroud" />
+
+        <TextView
+            android:id="@+id/recycler2_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:maxLines="1"
+            android:text="Title"
+            android:textColor="#1d3557"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/recycler2_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:fontFamily="@font/source_sans_pro"
+            android:maxLines="1"
+            android:text="Time"
+            android:textAlignment="textEnd"
+            android:textColor="#e63946"
+            android:textSize="14dp" />
+
+        <RatingBar
+            android:id="@+id/recycler2_ratings"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:isIndicator="true"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="3dp" />
+
+        <TextView
+            android:id="@+id/recycler2_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro"
+            android:maxLines="2"
+            android:text="Details"
+            android:textColor="#1d3557"
+            android:textSize="16dp" />
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

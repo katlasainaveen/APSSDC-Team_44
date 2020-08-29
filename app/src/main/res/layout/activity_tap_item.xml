@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".Tap_item">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/back_btn2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_back"
+            android:src="@drawable/v_arrow_back"
+            android:tint="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tap_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/source_sans_pro"
+            android:inputType="textMultiLine"
+            android:text="Title"
+            android:textColor="#000000"
+            android:textSize="21dp" />
+
+        <ImageButton
+            android:id="@+id/tap_save"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_back"
+            android:src="@drawable/ic_baseline_save_24"
+            android:tint="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RatingBar
+                    android:id="@+id/tap_ratingBar"
+                    style="@style/Widget.AppCompat.RatingBar.Indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:numStars="5"
+                    android:scaleX="0.8"
+                    android:scaleY="0.8"
+                    android:theme="@style/RatingBar" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="10dp"
+                    android:overScrollMode="never"
+                    android:scrollbars="none">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/tap_image1"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:background="@drawable/mainbackgroud"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/tap_image2"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:layout_marginLeft="12dp"
+                            android:background="@drawable/mainbackgroud"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintStart_toEndOf="@+id/tap_image1"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </HorizontalScrollView>
+
+                <TextView
+                    android:id="@+id/tap_deqscription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:background="#EDEDED"
+                    android:fontFamily="@font/source_sans_pro_semibold"
+                    android:maxLines="1"
+                    android:paddingRight="30dp"
+                    android:text="Description"
+                    android:textAlignment="textEnd"
+                    android:textColor="#000000"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:id="@+id/tap_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/source_sans_pro"
+                    android:text="Description"
+                    android:textColor="#009688"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/tap_dseqscription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21dp"
+                    android:background="#EDEDED"
+                    android:fontFamily="@font/source_sans_pro_semibold"
+                    android:maxLines="1"
+                    android:paddingRight="30dp"
+                    android:text="Time Taken"
+                    android:textAlignment="textEnd"
+                    android:textColor="#000000"
+                    android:textSize="19dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/icon_time"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/totaltimsse_hre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="12dp"
+                        android:fontFamily="@font/alike_angular"
+                        android:maxLines="2"
+                        android:text="Total Time:- "
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/tap_totaltime"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="12dp"
+                        android:fontFamily="@font/alike_angular"
+                        android:maxLines="2"
+                        android:text="time"
+                        android:textColor="#FF0000"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/icon_time"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/totaltime_hre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="12dp"
+                        android:fontFamily="@font/alike_angular"
+                        android:maxLines="2"
+                        android:text="Preparation Time:- "
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/tap_preparationtime"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="12dp"
+                        android:fontFamily="@font/alike_angular"
+                        android:maxLines="2"
+                        android:text="time"
+                        android:textColor="#FF0000"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/icon_time"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/totaltimssew_hre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="12dp"
+                        android:fontFamily="@font/alike_angular"
+                        android:maxLines="2"
+                        android:text="Cook Time:- "
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/tap_cooktime"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="12dp"
+                        android:fontFamily="@font/alike_angular"
+                        android:maxLines="2"
+                        android:text="time"
+                        android:textColor="#FF0000"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ta_ingredients"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21dp"
+                    android:background="#EDEDED"
+                    android:fontFamily="@font/source_sans_pro_semibold"
+                    android:maxLines="1"
+                    android:paddingRight="30dp"
+                    android:text="Ingredients"
+                    android:textAlignment="textEnd"
+                    android:textColor="#000000"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:id="@+id/tap_ingredients"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/source_sans_pro"
+                    android:text="ingredients"
+                    android:textColor="#3F51B5"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/ta_ingreqdients"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21dp"
+                    android:background="#EDEDED"
+                    android:fontFamily="@font/source_sans_pro_semibold"
+                    android:maxLines="1"
+                    android:paddingRight="30dp"
+                    android:text="Notes"
+                    android:textAlignment="textEnd"
+                    android:textColor="#000000"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:id="@+id/tap_notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/source_sans_pro"
+                    android:text="Notes"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tap_descriptiodn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21dp"
+                    android:background="#EDEDED"
+                    android:fontFamily="@font/source_sans_pro_semibold"
+                    android:maxLines="1"
+                    android:paddingRight="30dp"
+                    android:text="Nutrition Values"
+                    android:textAlignment="textEnd"
+                    android:textColor="#000000"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:id="@+id/tap_nutrition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/source_sans_pro"
+                    android:text="Nutrition"
+                    android:textColor="#FF5722"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tap_procsedure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21dp"
+                    android:background="#EDEDED"
+                    android:fontFamily="@font/source_sans_pro_semibold"
+                    android:maxLines="1"
+                    android:paddingRight="30dp"
+                    android:text="Procedure"
+                    android:textAlignment="textEnd"
+                    android:textColor="#000000"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:id="@+id/tap_procedure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/source_sans_pro"
+                    android:text="Details"
+                    android:textColor="#3E3E3E"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

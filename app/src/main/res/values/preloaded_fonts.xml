@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aclonica</item>
+        <item>@font/aladin</item>
+        <item>@font/aldrich</item>
+        <item>@font/alegreya_sc</item>
+        <item>@font/alex_brush</item>
+        <item>@font/alike_angular</item>
+        <item>@font/baloo</item>
+        <item>@font/source_sans_pro</item>
+        <item>@font/source_sans_pro_bold</item>
+        <item>@font/source_sans_pro_semibold</item>
+        <item>@font/source_serif_pro</item>
+    </array>
+</resources>
